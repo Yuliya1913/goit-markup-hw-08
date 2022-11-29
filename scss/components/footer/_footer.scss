@@ -1,0 +1,36 @@
+.footer {
+    padding-top: 72px;
+    padding-bottom: 60px;
+    background-color: var(--background-color-third);
+
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer__left {
+    margin-right: 70px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+    display: block;
+
+    color: var(--white-color);
+}
+
+.footer__logo--accent {
+    color: var(--accent-color);
+}
+
+.footer__right {
+    padding-top: 12px;
+    margin-right: 93px;
+}
+
+.footer__group {
+    padding-top: 12px;
+}
