@@ -7,12 +7,29 @@
 
 }
 
+// // screen phone and screen tablet
+
+@media screen and (max-width: 1199px) {
+    .clients__title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+   
+}
+
+
 .clients__list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+      
+    }
 }
+
 
 .clients__item {
     display: flex;
@@ -38,6 +55,23 @@
     color: var(--accent-color);
     border-color: var(--border-color-aktive);
     }
+
+
+    @media screen and (max-width: 767px) {
+        width: 210px;
+       
+    }
+
+    @media screen and (max-width: 1199px) {
+        width: 226px;
+    
+    }
+        
+}
+
+
+
+
 
 }
 

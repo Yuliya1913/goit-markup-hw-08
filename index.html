@@ -56,10 +56,10 @@
                 </li>
             </ul>
 
-            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="header__button" width="40" height="40">
+            <button type="button" class="header__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="header__img" width="40" height="40">
                     <use class="header__menu" href="./images/icons.svg#menu"></use>
-                    <use class="header__close" href="./images/icons.svg#close"></use>
+                    <!-- <use class="header__close" href="./images/icons.svg#close"></use> -->
                 </svg>
             </button>
 
@@ -344,7 +344,7 @@
 
         <!-- Постійні клієнти -->
 
-        <!-- <section class="clients section">
+        <section class="clients section">
             <div class="clients__container container">
                 <h2 class="clients__title">Постійні клієнти</h2>
                 <ul class="clients__list">
@@ -396,7 +396,7 @@
                 </ul>
             </div>
         </section>
-    </main> -->
+    </main>
 
 
     <!--Футер-->
@@ -534,33 +534,28 @@
     <!-- mobal menu -->
  <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu-toggle js-close-menu">
-        <svg 
-            fill="carrentColor" 
-            viewBox="0 0 20 20" 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="24" 
-            height="24">
-            <path fill-rule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clip-rule="evenodd"></path>
+        <svg class="menu-button" width="40" height="40">
+            <!-- <use class="header__menu" href="./images/icons.svg#menu"></use> -->
+            <use class="menu-close" href="./images/icons.svg#close"></use>
         </svg>
+       
     </button>
 
-    <ul class="mobile-menu">
+    <ul class="mobile menu-mobile">
         <li class="mobile-item"><a href="" class="mobile-link link">Студія</a></li>
         <li class="mobile-item"><a href="" class="mobile-link link">Портфоліо</a></li>
         <li class="mobile-item"><a href="" class="mobile-link link">Контакти</a></li>
     </ul>
-    <ul class="mobile-contacts">
-        <li class="contacts-item"><a href="tel:+380961111111" class="mobile-contact link">+38 096 111 11 11</a></li>
-        <li class="contacts-item"><a href="mailto:info@devstudio.com" class="mobile-contact link">info@devstudio.com</a></li>
+    <ul class="contacts contacts-mobile">
+        <li class="contacts-item"><a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a></li>
+        <li class="contacts-item"><a href="mailto:info@devstudio.com" class="contacts-adress link">info@devstudio.com</a></li>
        
     </ul>
-    <ul class="mobile-socials">
-        <li class="socials-item"><a href="https://www.instagram.com" class="link">Instagram</a></li>
-        <li class="socials-item"><a href="https://twitter.com" class="link">Twitter</a></li>
-        <li class="socials-item"><a href="https://www.facebook.com" class="link">Facebook</a></li>
-        <li class="socials-item"><a href="https://www.linkedin.com" class="link">LinkedIn</a></li>
+    <ul class="socials menu-socials">
+        <li class="socials-item"><a href="https://www.instagram.com" class="socials-link link">Instagram</a></li>
+        <li class="socials-item"><a href="https://twitter.com" class="socials-link link">Twitter</a></li>
+        <li class="socials-item"><a href="https://www.facebook.com" class="socials-link link">Facebook</a></li>
+        <li class="socials-item"><a href="https://www.linkedin.com" class="socials-link link">LinkedIn</a></li>
     </ul>
 </div>
 
