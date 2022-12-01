@@ -22,7 +22,7 @@
   <!--Custom styles-->
 
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 
 </head>
 
@@ -55,22 +55,30 @@
                         +38 096 111 11 111</a>
                 </li>
             </ul>
+
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="header__button" width="40" height="40">
+                    <use class="header__menu" href="./images/icons.svg#menu"></use>
+                    <use class="header__close" href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+
         </div>
     </header>
     
     <main>
         <!--Bg-->
 
-        <section class="section-bg">
+        <!-- <section class="section-bg">
                 <div class="section-bg__container container">
                     <h1 class="section-bg__title">Ефективні рішення для вашого бізнесу</h1>
                     <button type="button" class="button section-bg__button" data-modal-open >Замовити послугу</button>
                 </div>
-        </section>
+        </section> -->
     
         <!--Інформація про сферу діяльності-->
 
-        <section class="requirement">
+        <!-- <section class="requirement">
             <div class="requirement__container container">
                 <h2 hidden>Особливості</h2>
                 <ul class="activity requirement__activity">
@@ -119,11 +127,11 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- сфера діяльності -->
 
-        <section class="offer section">
+        <!-- <section class="offer section">
             <div class="offer__container container">
                 <h2 class="offer__title">Чим ми займаємося</h2>
                 <ul class="work offer__work">
@@ -147,11 +155,11 @@
                         </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!--Склад команды-->
 
-        <section class="cart section">
+        <!-- <section class="cart section">
             <div class="cart__container container">
                 <h2 class="cart__title">Наша команда</h2>
 
@@ -332,11 +340,11 @@
 
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Постійні клієнти -->
 
-        <section class="clients section">
+        <!-- <section class="clients section">
             <div class="clients__container container">
                 <h2 class="clients__title">Постійні клієнти</h2>
                 <ul class="clients__list">
@@ -388,12 +396,12 @@
                 </ul>
             </div>
         </section>
-    </main>
+    </main> -->
 
 
     <!--Футер-->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__container container">
             <div class="left footer__left">
                 <a href="./index.html" lang="en" class="logo footer__logo link"><span class="footer__logo--accent">Web</span>Studio</a>
@@ -459,7 +467,7 @@
                 </form>
             </div>
          </div>
-    </footer>
+    </footer> -->
 
 
 
@@ -523,6 +531,57 @@
         </div>
     </div>
 
+    <!-- mobal menu -->
+ <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+        <svg 
+            fill="carrentColor" 
+            viewBox="0 0 20 20" 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="24" 
+            height="24">
+            <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+        </svg>
+    </button>
+
+    <ul class="mobile-menu">
+        <li class="mobile-item"><a href="" class="mobile-link link">Студія</a></li>
+        <li class="mobile-item"><a href="" class="mobile-link link">Портфоліо</a></li>
+        <li class="mobile-item"><a href="" class="mobile-link link">Контакти</a></li>
+    </ul>
+    <ul class="mobile-contacts">
+        <li class="contacts-item"><a href="tel:+380961111111" class="mobile-contact link">+38 096 111 11 11</a></li>
+        <li class="contacts-item"><a href="mailto:info@devstudio.com" class="mobile-contact link">info@devstudio.com</a></li>
+       
+    </ul>
+    <ul class="mobile-socials">
+        <li class="socials-item"><a href="https://www.instagram.com" class="link">Instagram</a></li>
+        <li class="socials-item"><a href="https://twitter.com" class="link">Twitter</a></li>
+        <li class="socials-item"><a href="https://www.facebook.com" class="link">Facebook</a></li>
+        <li class="socials-item"><a href="https://www.linkedin.com" class="link">LinkedIn</a></li>
+    </ul>
+</div>
+
+
+    <!-- <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script> -->
+
+    
+
+    <script src="./js/header-scroll.js"></script>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
+
+
 </body>
 </html> 

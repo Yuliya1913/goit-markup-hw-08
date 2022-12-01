@@ -1,34 +1,105 @@
+.header {
+    @media screen and (max-width: 787px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+   }
+}
+
+
 .heder__container {
     background-color: var(--background-colorl);
     display: flex;
     align-items: center;
-
+ 
 }
 
 .header__line {
     border-bottom: 1px solid var(--border-line);
 
 }
-.heder__list-auth {
-    display: flex;
-    align-items: center;
+
+// Прячем кнопку
+.menu-toggle {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    padding-left: 10px;
     margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .header__button {
+        display: none;
+    }
+    
+}
+
+.header__menu {
+    display: block;
+}
+
+.header__close {
+ display: none;
+}
+
+
+.heder__list-auth {
+    @media screen and (max-width: 767px) {
+    display: none;
+    }
+    @media screen and (min-width: 768px){
+        display: block;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        margin-left: auto;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+    
 
 }
 
+
+.heder__item-auth {
+@media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+}
+}
+
 .heder__item-auth:not(:last-child) {
+    @media screen and (min-width: 1200px) {
     margin-right: 50px;
+    }
+    
 
 }
 
 .header__contact {
-    display: inline-flex;
+    @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;  
+    display: flex;
     align-items: center;
-    color: currentColor;
+    
+    }
 
-    font-weight: 500;
+    @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.14;
+    display: inline-flex;
+    align-items: center;
+   
+    }
+   
+    color: currentColor;
+    font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--text-color);
     transition: color var(--anim-fast);

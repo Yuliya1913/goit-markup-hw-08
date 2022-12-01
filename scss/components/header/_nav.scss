@@ -1,15 +1,29 @@
 .nav {
+
     display: flex;
     align-items: center;
 }
+
 .nav__logo {
+    @media screen and (min-width: 768px) {
+    margin-right: 87px;
+    
+        }
+    @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    }
 }
+
 
 .nav__logo--accent {
     color: var(--accent-color);
 }
+
 .nav__list {
+    @media screen and (max-width: 767px) {
+     display: none;
+    }
+    
     display: flex;
     align-items: center;
 
