@@ -103,9 +103,6 @@
   
 }
  
-// .mobile__link--current {
-//   color: var(--accent-color);
-// }
 
 .mobile-item:not(:last-child) {
  margin-bottom: 32px;
@@ -145,29 +142,24 @@
  
 }
 
+.socials-item:not(:last-child):after {
+  content: " ";
+  width: 1px;
+  height: 100%;
+  display: inline-block;
+  background-color: rgba(33, 33, 33, 0.2);
+  transform: translateX(10px);
+
+}
 .socials-link {
-  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22px;
     
   letter-spacing: 0.02em;
   color: var(--accent-color);
- position: relative;
  
 }
 
-.socials-link::before{
 
-  content: " ";
-  width: 1px;
-  height: 100%;
-  display: inline-block;
-  background-color: rgba(33, 33, 33, 0.2);
-  position: absolute;
-  top: 0;
-  left: 100%;
-  transform: translateX(10px);
-  
-}
 
