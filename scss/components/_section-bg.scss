@@ -1,22 +1,28 @@
 .section-bg {
     padding-top: 200px;
     padding-bottom: 200px;
-
+   
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 
     background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/section-bg/Img.jpg);
 
-    background-repeat: no-repeat;
-    background-position: center;
+      
 
-    margin-left: auto;
-    margin-right: auto;
+    // screen phone and screen tablet
+    @media screen and (max-width: 1199px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
 
+    }
 }
 
 .section-bg__container {
@@ -37,14 +43,33 @@
     text-transform: uppercase;
     color: var(--white-color);
 
+    // // screen phone and screen tablet
+
+    @media screen and (max-width: 1199px) {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    width: 360px;
+
+    }
 }
+
+
 .section-bg__button {
 
     padding: 10px 32px;
     min-width: 216px;
     min-height: 50px;
-    left: 677px;
-    top: 445px;
+    
+
+    // screen phone and screen tablet
+
+    @media screen and (max-width: 1199px) {
+        padding: 10px 24px;
+        min-width: 200px;
+        min-height: 50px;
+        
+    }
 
     transition: background-color var(--anim-fast), text-shadow var(--anim-fast);
 
