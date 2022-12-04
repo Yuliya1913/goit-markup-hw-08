@@ -10,9 +10,26 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white-color);
+
+    @media screen and (max-width: 797px) {
+       margin-bottom: 8px;
+    
+        }
+
 }
 
-.adress__item {
+.adress__item:not(:last-child) {
+ margin-bottom: 9px;
+
+    @media screen and (max-width: 797px) {
+            margin-bottom: 8px;
+    
+        }
+
+
+}
+
+.adress__link {
     display: block;
 
     font-style: normal;

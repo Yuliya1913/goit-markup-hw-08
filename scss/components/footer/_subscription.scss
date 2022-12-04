@@ -2,6 +2,15 @@
     display: flex;
     gap: 12px;
     position: relative;
+
+
+    @media screen and (max-width: 797px) {
+        display: block;
+
+    }
+
+
+
 }
 
 .subscription__email {
@@ -35,7 +44,14 @@
     
     color: rgba(255, 255, 255, 0.6);
     }
+        @media screen and (max-width: 797px) {
+        margin-bottom: 20px;
+        }
+
+        
 }
+
+
 
 
 .subscription__wrapper {
@@ -70,5 +86,11 @@
     position: absolute;
     top: 30%;
     left: 148px;
+
+    @media screen and (max-width: 797px) {
+        left: 275px;
+        }
+
+    
 
 }

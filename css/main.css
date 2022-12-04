@@ -568,6 +568,11 @@ img {
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (max-width: 797px) {
+  .team {
+    display: block;
+  }
+}
 
 .team__list {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
@@ -576,8 +581,7 @@ img {
 }
 @media screen and (max-width: 797px) {
   .team__list {
-    -ms-flex-preferred-size: 450px;
-        flex-basis: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -748,14 +752,24 @@ img {
   padding-bottom: 60px;
   background-color: var(--background-color-third);
 }
+@media screen and (max-width: 1199px) {
+  .footer {
+    padding-top: 60px;
+  }
+}
 
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 797px) {
+  .footer__container {
+    display: block;
+  }
+}
 
-.footer__left {
+.foter__left {
   margin-right: 70px;
 }
 
@@ -779,13 +793,34 @@ img {
   padding-top: 12px;
   margin-right: 93px;
 }
+@media screen and (max-width: 797px) {
+  .footer__right {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 60px;
+  }
+}
 
 .footer__group {
   padding-top: 12px;
 }
+@media screen and (max-width: 797px) {
+  .footer__group {
+    padding-top: 0;
+    text-align: center;
+  }
+}
 
 .left {
   width: 231px;
+}
+@media screen and (max-width: 797px) {
+  .left {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 .adress {
@@ -799,8 +834,22 @@ img {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
+@media screen and (max-width: 797px) {
+  .adress__text {
+    margin-bottom: 8px;
+  }
+}
 
-.adress__item {
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 797px) {
+  .adress__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.adress__link {
   display: block;
   font-style: normal;
   font-weight: 400;
@@ -811,7 +860,7 @@ img {
   -webkit-transition: color var(--anim-fast);
   transition: color var(--anim-fast);
 }
-.adress__item:hover, .adress__item:focus {
+.adress__link:hover, .adress__link:focus {
   color: var(--accent-color);
 }
 
@@ -823,6 +872,13 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+}
+@media screen and (max-width: 797px) {
+  .center__text {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 .center__list {
@@ -867,6 +923,11 @@ img {
 .group {
   width: 570px;
 }
+@media screen and (max-width: 797px) {
+  .group {
+    width: 450px;
+  }
+}
 
 .group__text {
   font-weight: 700;
@@ -884,6 +945,11 @@ img {
   display: flex;
   gap: 12px;
   position: relative;
+}
+@media screen and (max-width: 797px) {
+  .subscription {
+    display: block;
+  }
 }
 
 .subscription__email {
@@ -959,6 +1025,11 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 797px) {
+  .subscription__email {
+    margin-bottom: 20px;
+  }
+}
 
 .subscription__wrapper {
   position: relative;
@@ -986,6 +1057,11 @@ img {
   position: absolute;
   top: 30%;
   left: 148px;
+}
+@media screen and (max-width: 797px) {
+  .subscription-icon {
+    left: 275px;
+  }
 }
 
 .portfolio {

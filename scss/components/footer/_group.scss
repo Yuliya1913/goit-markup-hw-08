@@ -1,5 +1,9 @@
 .group {
     width: 570px;
+
+    @media screen and (max-width: 797px) {
+            width: 450px;
+        }
 }
 
 .group__text {
