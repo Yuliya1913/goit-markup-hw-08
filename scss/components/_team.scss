@@ -1,9 +1,43 @@
 .team {
-    display: flex;
-    flex-wrap: wrap;
+    
     gap: 30px;
 
+    @media screen and (max-width: 797px) {
+    
+        display: block;
+    
+        }
+
+    @media screen and (min-width: 798px) {
+
+        display: flex;
+        flex-wrap: wrap;;
+    }
 }
+
+
+.team__list {
+    flex-basis: calc((100% - 90px) / 4);
+    border-radius: 4px;
+
+
+    // screen phone 
+    
+    @media screen and (max-width: 797px) {
+         
+     flex-basis: calc((100% - 0) / 1);
+    
+    }    
+    
+    // screen tablet
+
+    @media screen and (max-width: 1199px) {
+    
+    flex-basis: calc((100% - 30px) / 2);
+    }
+}
+
+
 
 .team__boxing {
     text-align: center;
@@ -11,11 +45,8 @@
 
 }
 
-.team__list {
-    flex-basis: calc((100% - 90px) / 4);
-    border-radius: 4px;
 
-}
+
 
 .team__list {
     background-color: var(--background-color);
