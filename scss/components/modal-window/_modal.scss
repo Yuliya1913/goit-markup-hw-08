@@ -16,6 +16,13 @@
     transform: translate(-50%, -50%) scale(0.8);
     
     }
+
+    @media screen and (max-width: 1199px) {
+    min-width: 450px;
+    min-height: 609px;
+
+ }
+    
 }
 
 .modal__close {
@@ -33,10 +40,16 @@
 .modal__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
     margin-bottom: 12px;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
 }

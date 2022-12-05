@@ -1308,6 +1308,12 @@ img {
   -webkit-transform: translate(-50%, -50%) scale(0.8);
           transform: translate(-50%, -50%) scale(0.8);
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
 
 .modal__close {
   position: absolute;
@@ -1321,11 +1327,17 @@ img {
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 12px;
+}
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .close {
@@ -1455,6 +1467,28 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+@media screen and (max-width: 1199px) {
+  .name__coment::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .name__coment::-moz-placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .name__coment:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .name__coment::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .name__coment::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
 .data__checkbox {
   font-weight: 400;
@@ -1476,6 +1510,12 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (max-width: 1199px) {
+  .data__checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .data__input {
