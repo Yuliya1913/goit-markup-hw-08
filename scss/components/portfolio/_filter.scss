@@ -4,16 +4,35 @@
     margin-bottom: 50px;
     justify-content: center;
 
+    @media screen and (max-width: 797px) {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+
+
 }
 
+.filter__item {
+ margin-right: 8px;
+        
+}
+
+.filter__item:not(:nth-last-child(-n + 2)) {
+
+@media screen and (max-width: 797px) {
+    margin-bottom: 15px;
+
+}
+}
 .filter__button {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
     display: block;
-    margin-right: 8px;
-
+    
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -34,5 +53,9 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
      }
 
+        @media screen and (max-width: 797px) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
 }
 

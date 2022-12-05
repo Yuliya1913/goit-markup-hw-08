@@ -1154,6 +1154,28 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 797px) {
+  .portfolio__filter {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.filter__item {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 797px) {
+  .filter__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 15px;
+  }
+}
 
 .filter__button {
   padding-top: 6px;
@@ -1161,7 +1183,6 @@ img {
   padding-left: 22px;
   padding-right: 22px;
   display: block;
-  margin-right: 8px;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -1183,6 +1204,12 @@ img {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 797px) {
+  .filter__button {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .project {
@@ -1278,6 +1305,7 @@ img {
   opacity: 1;
   -webkit-transition: opacity var(--anim-fast), visibility var(--anim-fast);
   transition: opacity var(--anim-fast), visibility var(--anim-fast);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
