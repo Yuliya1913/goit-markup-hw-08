@@ -21,8 +21,12 @@
          
      max-width: 450px;
     
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }    
     
+
     // screen tablet
 
     @media screen and (max-width: 1199px) {
@@ -30,6 +34,7 @@
     flex-basis: calc((100% - 30px) / 2);
     }
 }
+
 
 
 

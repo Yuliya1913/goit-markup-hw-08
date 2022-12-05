@@ -8,24 +8,28 @@
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        
+        margin-bottom: 40px;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) { 
+     margin-bottom: 14px;
+ }
 
 }
 
 .filter__item {
  margin-right: 8px;
-        
+       
 }
 
 .filter__item:not(:nth-last-child(-n + 2)) {
 
-@media screen and (max-width: 797px) {
+    @media screen and (max-width: 797px) {
     margin-bottom: 15px;
 
 }
 }
+
 .filter__button {
     padding-top: 6px;
     padding-bottom: 6px;

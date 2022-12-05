@@ -2,12 +2,29 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+
+    @media screen and (max-width: 797px) {
+        display: block;
+    }
 }
 
 .project__item {
     flex-basis: calc((100% - 60px) / 3);
 
+    @media screen and (max-width: 1199px) {
+        flex-basis: calc((100% - 30px) / 2);
+            
+    }
+
+
 }
+.project__item:not(:last-child) {
+    @media screen and (max-width: 797px) {
+        margin-bottom: 30px;;
+    }
+}
+
 
 .project__link {
     display: block;
@@ -62,6 +79,11 @@
     border-bottom: 1px solid var(--border-portfolio);
 }
 
+.project__infa--indent {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 60px;
+    }
+}
 .project__title {
     font-size: 18px;
     line-height: 2;

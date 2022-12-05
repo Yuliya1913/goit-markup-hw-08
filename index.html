@@ -59,7 +59,6 @@
             <button type="button" class="header__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="header__img" width="40" height="40">
                     <use class="header__menu" href="./images/icons.svg#menu"></use>
-                    <!-- <use class="header__close" href="./images/icons.svg#close"></use> -->
                 </svg>
             </button>
 
@@ -137,19 +136,32 @@
                 <ul class="work offer__work">
                     <li class="work__item"> 
                         <div class="work__img">
-                          <img src="./images/a/img.jpg" alt="Робота з програмами" width="370">
+                            <img srcset="./images/a/img_370-min.jpg 370w,
+                                        ./images/a/img_740-min.jpg 740w"
+                                              
+                                sizes="(min-width:1200px) 370px, 100vw"
+                                src="./images/a/img_370-min.jpg" alt="Робота з програмами" width="370" height="249" loading="lazy">
+                         
                           <p class="work__text">Десктопні додатки</p>                            
                         </div>
                     </li>
                     <li class="work__item"> 
                         <div class="work__img">
-                            <img src="./images/a/img(4).jpg" alt="Дизайнер - розробник" width="370">
+                            <img srcset="./images/a/img_370-1-min.jpg 370w,
+                                        ./images/a/img_740-1-min.jpg 740w" 
+                                        sizes="(min-width:1200px) 370px, 100vw"
+                                src="./images/a/img_370-1-min.jpg" alt="Дизайнер - розробник" width="370" height="249" loading="lazy">
+                            
                             <p class="work__text">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="work__item">
                         <div class="work__img">
-                            <img src="./images/a/img(5).jpg" alt="Вебдизайнер" width="370">
+                            <img srcset="./images/a/img_370-2-min.jpg 370w,
+                                         /images/a/img_740-2-min.jpg 740w" 
+                                         sizes="(min-width:1200px) 370px, 100vw"
+                                src="./images/a/img_370-2-min.jpg" alt="Вебдизайнер" width="370" height="249" loading="lazy">
+                            
                             <p class="work__text">Мобільні додатки</p>
                         </div>
                         </li>
@@ -592,32 +604,31 @@
     </div>
 
     <!-- mobal menu -->
- <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
-        <svg class="menu-button" width="40" height="40">
-            <!-- <use class="header__menu" href="./images/icons.svg#menu"></use> -->
-            <use class="menu-close" href="./images/icons.svg#close"></use>
-        </svg>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+         <svg class="menu-button" width="40" height="40">
+                <use class="menu-close" href="./images/icons.svg#close"></use>
+         </svg>
        
-    </button>
+         </button>
 
-    <ul class="mobile menu__mobile">
-        <li class="mobile__item"><a href="" class="mobile__link mobile__link--current link">Студія</a></li>
-        <li class="mobile__item"><a href="" class="mobile__link link">Портфоліо</a></li>
-        <li class="mobile__item"><a href="" class="mobile__link link">Контакти</a></li>
-    </ul>
-    <ul class="contacts contacts__mobile">
-        <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link link">+38 096 111 11 11</a></li>
-        <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__adress link">info@devstudio.com</a></li>
+         <ul class="mobile menu__mobile">
+             <li class="mobile__item"><a href="" class="mobile__link mobile__link--current link">Студія</a></li>
+             <li class="mobile__item"><a href="./portfolio.html" class="mobile__link link">Портфоліо</a></li>
+             <li class="mobile__item"><a href="" class="mobile__link link">Контакти</a></li>
+        </ul>
+        <ul class="contacts contacts__mobile">
+             <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link link">+38 096 111 11 11</a></li>
+             <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__adress link">info@devstudio.com</a></li>
        
-    </ul>
-    <ul class="socials menu__socials">
-        <li class="socials__item"><a href="https://www.instagram.com" class="socials__link link">Instagram</a></li>
-        <li class="socials__item"><a href="https://twitter.com" class="socials__link link">Twitter</a></li>
-        <li class="socials__item"><a href="https://www.facebook.com" class="socials__link link">Facebook</a></li>
-        <li class="socials__item"><a href="https://www.linkedin.com" class="socials__link link">LinkedIn</a></li>
-    </ul>
-</div>
+         </ul>
+         <ul class="socials menu__socials">
+             <li class="socials__item"><a href="https://www.instagram.com" class="socials__link link">Instagram</a></li>
+              <li class="socials__item"><a href="https://twitter.com" class="socials__link link">Twitter</a></li>
+             <li class="socials__item"><a href="https://www.facebook.com" class="socials__link link">Facebook</a></li>
+            <li class="socials__item"><a href="https://www.linkedin.com" class="socials__link link">LinkedIn</a></li>
+         </ul>
+         </div>
 
 
     <!-- <script src="./js/modal.js"></script>
