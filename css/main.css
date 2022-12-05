@@ -521,6 +521,11 @@ img {
 .offer {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .offer {
+    display: none;
+  }
+}
 
 .offer__title {
   margin-bottom: 50px;
@@ -799,9 +804,30 @@ img {
     display: block;
   }
 }
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .footer__left {
   margin-right: 70px;
+}
+@media screen and (max-width: 797px) {
+  .footer__left {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__left {
+    padding-left: 76px;
+    margin-right: 165px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer__logo {
@@ -820,16 +846,29 @@ img {
   color: var(--accent-color);
 }
 
-.footer__right {
-  padding-top: 12px;
-  margin-right: 93px;
+@media screen and (min-width: 798px) {
+  .footer__adress {
+    width: 232px;
+  }
 }
+
 @media screen and (max-width: 797px) {
   .footer__right {
     margin: 0 auto;
     text-align: center;
     padding-top: 0;
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer__right {
+    padding-top: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__right {
+    padding-top: 12px;
+    margin-right: 93px;
   }
 }
 
@@ -842,15 +881,17 @@ img {
     text-align: center;
   }
 }
-
-.left {
-  width: 231px;
-}
-@media screen and (max-width: 797px) {
-  .left {
+@media screen and (max-width: 1199px) {
+  .footer__group {
+    padding-top: 0;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .left {
+    width: 231px;
   }
 }
 
@@ -865,7 +906,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 1199px) {
   .adress__text {
     margin-bottom: 8px;
   }
@@ -874,7 +915,7 @@ img {
 .adress__item:not(:last-child) {
   margin-bottom: 9px;
 }
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 1199px) {
   .adress__item:not(:last-child) {
     margin-bottom: 8px;
   }
@@ -954,7 +995,7 @@ img {
 .group {
   width: 570px;
 }
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 1199px) {
   .group {
     width: 450px;
   }
@@ -977,7 +1018,7 @@ img {
   gap: 12px;
   position: relative;
 }
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 1199px) {
   .subscription {
     display: block;
   }
@@ -1056,7 +1097,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 1199px) {
   .subscription__email {
     margin-bottom: 20px;
   }
@@ -1089,7 +1130,7 @@ img {
   top: 30%;
   left: 148px;
 }
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 1199px) {
   .subscription-icon {
     left: 275px;
   }
