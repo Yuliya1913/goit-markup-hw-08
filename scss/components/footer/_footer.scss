@@ -17,7 +17,7 @@
 
   // screen phone 
 
-    @media screen and (max-width: 797px) {
+    @media screen and (max-width: 767px) {
         display: block;
 
     }
@@ -32,7 +32,7 @@
     margin-right: 70px;
     // screen phone 
 
-    @media screen and (max-width: 797px) {
+    @media screen and (max-width: 767px) {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 60px;
@@ -63,7 +63,7 @@
 
 
 .footer__adress {
-    @media screen and (min-width: 798px) {
+    @media screen and (min-width: 768px) {
     width: 232px;
     }
 }
@@ -73,7 +73,7 @@
 
 .footer__right {
 
-    @media screen and (max-width: 797px) {
+    @media screen and (max-width: 767px) {
         margin: 0 auto;
         text-align: center;
         padding-top: 0;
@@ -95,7 +95,7 @@
 .footer__group {
     padding-top: 12px;
 
-    @media screen and (max-width: 797px) {
+    @media screen and (max-width: 767px) {
      padding-top: 0;
      text-align: center;
     }
